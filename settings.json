@@ -1,0 +1,170 @@
+{
+  "editor.accessibilitySupport": "off",
+  "editor.fontFamily": "BerkeleyMono Nerd Font, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 15,
+  "window.zoomLevel": 0.2,
+  "editor.inlineSuggest.enabled": true,
+  "redhat.telemetry.enabled": false,
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "totalTypeScript.hideAllTips": false,
+  "totalTypeScript.hideBasicTips": false,
+  "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+  "git.confirmSync": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    },
+    {
+      "before": [
+        "j",
+        "k"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        ":"
+      ],
+      "commands": [
+        "workbench.action.showCommands"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "s",
+        "f"
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "b"
+      ],
+      "commands": [
+        "workbench.action.toggleSidebarVisibility"
+      ]
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "commands": [
+        "editor.action.showHover"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "d"
+      ],
+      "commands": [
+        "editor.action.goToDeclaration"
+      ]
+    },
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        ">"
+      ],
+      "commands": [
+        "editor.action.indentLines"
+      ]
+    },
+    {
+      "before": [
+        "<"
+      ],
+      "commands": [
+        "editor.action.outdentLines"
+      ]
+    },
+    {
+      "before": [
+        "p"
+      ],
+      "after": [
+        "p",
+        "g",
+        "v",
+        "y"
+      ]
+    }
+  ],
+  "vim.statusBarColorControl": true,
+  "vim.statusBarColors.normal": "#A1C281",
+  "vim.statusBarColors.insert": "#74ADE9",
+  "vim.statusBarColors.visual": "#BB7CD7",
+  "vim.statusBarColors.visualline": "#BB7CD7",
+  "vim.statusBarColors.visualblock": "#BB7CD7",
+  "vim.statusBarColors.replace": "#D08770",
+  "vim.statusBarColors.commandlineinprogress": "#007ACC",
+  "vim.statusBarColors.searchinprogressmode": "#007ACC",
+  "vim.statusBarColors.easymotionmode": "#007ACC",
+  "vim.statusBarColors.easymotioninputmode": "#007ACC",
+  "vim.statusBarColors.surroundinputmode": "#007ACC",
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#BB7CD7",
+    "statusBar.noFolderBackground": "#BB7CD7",
+    "statusBar.debuggingBackground": "#BB7CD7",
+    "statusBar.foreground": "#434C5E",
+    "statusBar.debuggingForeground": "#434C5E",
+    "statusBar.fontWeight": "bold",
+    "editorInlayHint.background": "#00000000",
+    "editorInlayHint.foreground": "#7f8c9a"
+  },
+  "totalTypeScript.hiddenTips": [
+    "variable-type-annotation"
+  ],
+  "javascript.inlayHints.enumMemberValues.enabled": true,
+  "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "javascript.inlayHints.parameterNames.enabled": "all",
+  "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "javascript.inlayHints.parameterTypes.enabled": true,
+  "javascript.inlayHints.variableTypes.enabled": true,
+  "typescript.inlayHints.enumMemberValues.enabled": true,
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.parameterTypes.enabled": true,
+  "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "typescript.inlayHints.variableTypes.enabled": true,
+  "editor.inlayHints.padding": true,
+  "rust-analyzer.inlayHints.bindingModeHints.enable": true,
+  "rust-analyzer.inlayHints.closureCaptureHints.enable": true,
+  "rust-analyzer.inlayHints.closureReturnTypeHints.enable": "always",
+  "rust-analyzer.inlayHints.discriminantHints.enable": "always",
+  "rust-analyzer.inlayHints.expressionAdjustmentHints.enable": "always",
+  "rust-analyzer.inlayHints.lifetimeElisionHints.useParameterNames": true,
+  "rust-analyzer.inlayHints.typeHints.hideClosureInitialization": true,
+  "rust-analyzer.inlayHints.typeHints.hideNamedConstructor": true,
+  "rust-analyzer.inlayHints.reborrowHints.enable": "always",
+  "rust-analyzer.inlayHints.closureStyle": "rust_analyzer",
+}
