@@ -89,6 +89,24 @@
         "editor.action.goToDeclaration"
       ]
     },
+    {
+      "before": [
+        "J"
+      ],
+      "commands": [
+        "editor.action.moveLinesUpAction"
+      ],
+      "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "commands": [
+        "editor.action.moveLinesDownAction"
+      ],
+      "when": "editorTextFocus && !editorReadonly"
+    }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
     {
@@ -167,4 +185,14 @@
   "rust-analyzer.inlayHints.typeHints.hideNamedConstructor": true,
   "rust-analyzer.inlayHints.reborrowHints.enable": "always",
   "rust-analyzer.inlayHints.closureStyle": "rust_analyzer",
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false
+  },
+  "git.enableSmartCommit": true,
 }
