@@ -111,6 +111,24 @@
   "vim.visualModeKeyBindingsNonRecursive": [
     {
       "before": [
+        "J"
+      ],
+      "commands": [
+        "editor.action.moveLinesUpAction"
+      ],
+      "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "commands": [
+        "editor.action.moveLinesDownAction"
+      ],
+      "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+      "before": [
         ">"
       ],
       "commands": [
