@@ -213,4 +213,5 @@
     "scminput": false
   },
   "git.enableSmartCommit": true,
+  "terminal.integrated.fontSize": 14
 }
