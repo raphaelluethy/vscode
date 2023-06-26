@@ -23,12 +23,22 @@
 	"vim.hlsearch": true,
 	"vim.insertModeKeyBindings": [
 		{
-			"before": ["j", "j"],
-			"after": ["<Esc>"]
+			"before": [
+				"j",
+				"j"
+			],
+			"after": [
+				"<Esc>"
+			]
 		},
 		{
-			"before": ["j", "k"],
-			"after": ["<Esc>"]
+			"before": [
+				"j",
+				"k"
+			],
+			"after": [
+				"<Esc>"
+			]
 		}
 	],
 	"vim.leader": "<space>",
@@ -38,54 +48,107 @@
 	},
 	"vim.normalModeKeyBindingsNonRecursive": [
 		{
-			"before": ["<leader>", "s", "f"],
-			"commands": ["workbench.action.quickOpen"]
+			"before": [
+				"<leader>",
+				"s",
+				"f"
+			],
+			"commands": [
+				"workbench.action.quickOpen"
+			]
 		},
 		{
-			"before": ["<leader>", "b"],
-			"commands": ["workbench.action.toggleSidebarVisibility"]
+			"before": [
+				"<leader>",
+				"b"
+			],
+			"commands": [
+				"workbench.action.toggleSidebarVisibility"
+			]
 		},
 		{
-			"before": ["K"],
-			"commands": ["editor.action.showHover"]
+			"before": [
+				"K"
+			],
+			"commands": [
+				"editor.action.showHover"
+			]
 		},
 		{
-			"before": ["g", "d"],
-			"commands": ["editor.action.goToDeclaration"]
+			"before": [
+				"g",
+				"d"
+			],
+			"commands": [
+				"editor.action.goToDeclaration"
+			]
 		},
 		{
-			"before": ["J"],
-			"commands": ["editor.action.moveLinesUpAction"],
-			"when": "editorTextFocus && !editorReadonly"
-		},
-		{
-			"before": ["K"],
-			"commands": ["editor.action.moveLinesDownAction"],
-			"when": "editorTextFocus && !editorReadonly"
+			"before": [
+				"<leader>",
+				"r",
+				"n"
+			],
+			"commands": [
+				"editor.action.rename",
+			]
 		},
 	],
 	"vim.visualModeKeyBindingsNonRecursive": [
 		{
-			"before": ["J"],
-			"commands": ["editor.action.moveLinesUpAction"],
+			"before": [
+				"<leader>",
+				"r",
+				"n"
+			],
+			"commands": [
+				"editor.action.rename",
+			]
+		},
+		{
+			"before": [
+				"J"
+			],
+			"commands": [
+				"editor.action.moveLinesUpAction"
+			],
 			"when": "editorTextFocus && !editorReadonly"
 		},
 		{
-			"before": ["K"],
-			"commands": ["editor.action.moveLinesDownAction"],
+			"before": [
+				"K"
+			],
+			"commands": [
+				"editor.action.moveLinesDownAction"
+			],
 			"when": "editorTextFocus && !editorReadonly"
 		},
 		{
-			"before": [">"],
-			"commands": ["editor.action.indentLines"]
+			"before": [
+				">"
+			],
+			"commands": [
+				"editor.action.indentLines"
+			]
 		},
 		{
-			"before": ["<"],
-			"commands": ["editor.action.outdentLines"]
+			"before": [
+				"<"
+			],
+			"commands": [
+				"editor.action.outdentLines"
+			]
 		},
 		{
-			"before": ["p"],
-			"after": ["p", "g", "v", "y"]
+			"before": [
+				"p"
+			],
+			"after": [
+				"p",
+				"g",
+				"v",
+				"y"
+			]
 		}
 	],
 	"vim.statusBarColorControl": true,
@@ -95,22 +158,28 @@
 	"vim.statusBarColors.visualline": "#BB7CD7",
 	"vim.statusBarColors.visualblock": "#BB7CD7",
 	"vim.statusBarColors.replace": "#D08770",
-	"vim.statusBarColors.commandlineinprogress": "#007ACC",
-	"vim.statusBarColors.searchinprogressmode": "#007ACC",
+	"vim.statusBarColors.commandlineinprogress": "#ffffff",
+	"vim.statusBarColors.searchinprogressmode": "#ffffff",
 	"vim.statusBarColors.easymotionmode": "#007ACC",
 	"vim.statusBarColors.easymotioninputmode": "#007ACC",
 	"vim.statusBarColors.surroundinputmode": "#007ACC",
+	"vim.searchHighlightColor": "rgba(250, 240, 170, 0.5)",
+	"vim.highlightedyank.enable": true,
+	"vim.highlightedyank.color": "rgba(250, 250, 250, 0.2)",
+	"vim.substitutionColor": "rgba(250, 240, 170, 0.5)",
 	"workbench.colorCustomizations": {
-		"statusBar.background": "#A1C281",
-		"statusBar.noFolderBackground": "#A1C281",
-		"statusBar.debuggingBackground": "#A1C281",
+		"statusBar.background": "#BB7CD7",
+		"statusBar.noFolderBackground": "#BB7CD7",
+		"statusBar.debuggingBackground": "#BB7CD7",
 		"statusBar.foreground": "#434C5E",
 		"statusBar.debuggingForeground": "#434C5E",
 		"statusBar.fontWeight": "bold",
 		"editorInlayHint.background": "#00000000",
 		"editorInlayHint.foreground": "#7f8c9a"
 	},
-	"totalTypeScript.hiddenTips": ["variable-type-annotation"],
+	"totalTypeScript.hiddenTips": [
+		"variable-type-annotation"
+	],
 	"javascript.inlayHints.enumMemberValues.enabled": true,
 	"javascript.inlayHints.functionLikeReturnTypes.enabled": true,
 	"javascript.inlayHints.parameterNames.enabled": "all",
@@ -151,6 +220,12 @@
 	"editor.scrollbar.vertical": "hidden",
 	"editor.scrollbar.horizontal": "hidden",
 	"editor.lineNumbers": "relative",
-	"editor.renderLineHighlight": "gutter"
+	"editor.renderLineHighlight": "gutter",
+	"files.watcherExclude": {
+		"**/.bloop": true,
+		"**/.metals": true,
+		"**/.ammonite": true
+	},
+	"files.autoSave": "onFocusChange",
+	"workbench.sideBar.location": "right"
 }
-
