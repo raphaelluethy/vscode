@@ -21,6 +21,8 @@
 	"vim.useSystemClipboard": true,
 	"vim.useCtrlKeys": true,
 	"vim.hlsearch": true,
+	"vim.surround": true,
+	"vim.sneak": true,
 	"vim.insertModeKeyBindings": [
 		{
 			"before": [
@@ -185,7 +187,6 @@
 	"javascript.inlayHints.parameterNames.enabled": "all",
 	"javascript.inlayHints.propertyDeclarationTypes.enabled": true,
 	"javascript.inlayHints.parameterTypes.enabled": true,
-	"javascript.inlayHints.variableTypes.enabled": true,
 	"typescript.inlayHints.enumMemberValues.enabled": true,
 	"typescript.inlayHints.functionLikeReturnTypes.enabled": true,
 	"typescript.inlayHints.parameterNames.enabled": "all",
@@ -227,5 +228,19 @@
 		"**/.ammonite": true
 	},
 	"files.autoSave": "onFocusChange",
-	"workbench.sideBar.location": "right"
+	"workbench.sideBar.location": "right",
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"editor.tabSize": 4,
+	"prettier.tabWidth": 4,
+	"latex-utilities.message.update.show": false,
+	"telemetry.telemetryLevel": "off",
+	"gitlens.telemetry.enabled": false,
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
 }
